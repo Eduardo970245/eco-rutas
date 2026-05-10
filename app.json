@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "name": "Eco-Rutas",
+    "slug": "eco-rutas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A2F27"
+    },
+    "scheme": "eco-rutas",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Eco-Rutas necesita tu ubicación para mostrarte rutas cercanas y guiarte durante la caminata.",
+          "locationWhenInUsePermission": "Necesitamos tu ubicación para mostrarte rutas cercanas y guiarte en la ruta."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "mx.lerma.ecorutas",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Eco-Rutas usa tu ubicación para mostrarte rutas cercanas y guiarte durante la caminata.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Eco-Rutas usa tu ubicación para guiarte en la ruta incluso cuando la app está en segundo plano."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1A2F27"
+      },
+      "package": "mx.lerma.ecorutas",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "TU_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    }
+  }
+}

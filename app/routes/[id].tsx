@@ -35,7 +35,7 @@ export default function RouteDetailScreen() {
           <TouchableOpacity style={styles.backBtn} onPress={() => router.back()}>
             <Text style={styles.backText}>← Volver</Text>
           </TouchableOpacity>
-          <Text style={styles.heroSub}>Ruta · Lerma, Estado de México</Text>
+          <Text style={styles.heroSub}>Ruta · Estado de México</Text>
           <Text style={styles.heroTitle}>{activeRoute.name}</Text>
         </SafeAreaView>
       </View>

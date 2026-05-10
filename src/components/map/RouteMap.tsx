@@ -55,7 +55,8 @@ export function RouteMap({
       mapType="terrain"
       showsCompass={true}
       showsScale={true}
-      showsMyLocationButton={false}
+      showsUserLocation={true} 
+      showsMyLocationButton={true}
       initialRegion={{
         latitude: route.start_lat,
         longitude: route.start_lng,
